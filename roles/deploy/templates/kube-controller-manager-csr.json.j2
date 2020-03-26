@@ -1,9 +1,6 @@
 {
-  "CN": "harbor",
-  "hosts": [
-    "127.0.0.1",
-    "{{ HARBOR_HOSTNAME }}"
-  ],
+  "CN": "system:kube-controller-manager",
+  "hosts": [],
   "key": {
     "algo": "rsa",
     "size": 2048
@@ -13,7 +10,7 @@
       "C": "CN",
       "ST": "HangZhou",
       "L": "XS",
-      "O": "k8s",
+      "O": "system:kube-controller-manager",
       "OU": "System"
     }
   ]
